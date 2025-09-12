@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header class="header" >
+        <a href="./index.html">
+            <img class="logo" src="./img/Logo_proyecto.png" alt="Logo">
+        </a>
+        <form class="buscador" action="./search-results.html" method="get">
+            <div>
+                <input type="text" name="Buscar productos" value="" placeholder="Buscar productos">
+            </div>
+            <div>
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+        <ul class="barra">
+            <li><a href="./index.html" class="botones">Home</a></li>
+            <li><a href="./login.html" class="botones">Login</a></li>
+            <li><a href="./register.html" class="botones">Registro</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="login" action="./index.html">
+            <div class="login_b">
+                <label for="email">Email: </label>
+                <input class="email_input" id="email" type="email" name="email" value="">
+            </div>
+            <div class="login_b">
+                <label for="contra">Contraseña: </label>
+                <input class="contra_input" id="contra" type="password" name="password" value="">
+            </div>
+            <div class="login_b">
+                <button class="boton_log" type="submit">Ingresar</button>
+            </div>
+            <div>
+                <a class="link_registro" href="./register.html">No tengo cuenta</a>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+    <p class="lema">"Comprá fácil, recibí rápido y seguro, sin moverte de casa."</p>
+    <div class="caja_nombres">
+        <p class="nombres">Tomas Cocorullo</p>
+        <p class="nombres">Juan Martín Basile</p>
+        <p class="nombres">Francisco Albergati</p>
+    </div>
+    </footer>
 </body>
 </html>
