@@ -81,3 +81,13 @@ a{
     flex-direction: column;
 }
 
+.m_log{
+    height: 72vh;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify content: center;
+    align-items: center;
+}
