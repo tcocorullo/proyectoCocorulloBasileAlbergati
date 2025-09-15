@@ -83,6 +83,10 @@ a{
 
 .m_log{
     height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .login{
@@ -90,4 +94,28 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 70%;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.login_b{
+    padding: 10px 30%;
+    color: white;
+}
+
+.titulo_log{
+    color: white;
+}
+
+.link_registro{
+    color: white;
+    padding: 10px 0;
+}
+
+.ingresar{
+    background-color: rgb(255, 145, 0);
+    padding: 10px 30%;
+    border-radius: 15px;
+    font-weight: bold;
 }
