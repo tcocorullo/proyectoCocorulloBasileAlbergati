@@ -117,5 +117,69 @@ a{
     background-color: rgb(255, 145, 0);
     padding: 10px 30%;
     border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.boton_log{
+    border: none;
+    background-color: rgb(255, 145, 0);
+    color: white;
     font-weight: bold;
+}
+
+.m_reg{
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register_b{
+    padding: 10px 30%;
+    color: white;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.register_boton{
+    background-color: rgb(255, 145, 0);
+    padding: 10px 30%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 10px
+}
+
+.boton_reg{
+    border: none;
+    background-color: rgb(255, 145, 0);
+    color: white;
+    font-weight: bold;
+}
+
+.titulo_reg{
+    color: white;
+}
+
+.link_reg{
+    color: white;
+    padding: 10px 0;
+}
+
+.condiciones{
+    color: white;
+    margin-bottom: 18px;
 }

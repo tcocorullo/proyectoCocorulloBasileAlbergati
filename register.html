@@ -26,8 +26,9 @@
         </ul>
         </nav>
     </header>
-    <main>
+    <main class="m_reg">
         <form class="register" action="./login.html">
+            <h1 class="titulo_reg" >Registrate</h1>
             <div class="register_b">
                 <label for="email">Email: </label>
                 <input class="email_register" id="email" type="email" name="email" value="">
@@ -40,15 +41,15 @@
                 <label for="contra">Repetir Contraseña: </label>
                 <input class="contra_register" id="contra" type="password" name="password" value="">
             </div>
-            <div class="register_b">
+            <div class="register_boton">
                 <button class="boton_reg" type="submit">Registrarme</button>
             </div>
             <div>
-                <input type="checkbox" id="condiciones" name="condiciones" required>
-                <label for="condiciones">Acepto los terminos y condiciones</label>
+                <input class="condiciones" type="checkbox" id="condiciones" name="condiciones" required>
+                <label class="condiciones" for="condiciones">Acepto los terminos y condiciones</label>
             </div>
             <div>
-                <a class="link_registro" href="./login.html">Ya tengo una cuenta</a>
+                <a class="link_reg" href="./login.html">Ya tengo una cuenta</a>
             </div>
         </form>
     </main>
