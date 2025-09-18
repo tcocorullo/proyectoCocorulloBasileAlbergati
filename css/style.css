@@ -189,12 +189,11 @@ a{
     flex-wrap: wrap; 
     flex-direction: row;
     justify-content: space-around;
-
-  
+ 
 }
 .producto {
   background-color: rgb(0, 0, 88);
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 9px;
   padding: 20px;
   text-align: left;
@@ -205,6 +204,7 @@ a{
   justify-content: space-between;
   margin-bottom: 30px
 }
+
 .producto img {
   width: 100%;
   height: 150px;
@@ -226,8 +226,92 @@ a{
 
 .producto a {
   display: inline-block;
-  color: blue;
+  color: rgb(0, 166, 255);
   font-weight: bold;
   font-size: 12px;
   margin-top: 12px;
+}
+
+
+.Imagenproducto img {
+  width: 400px; 
+  height: auto;
+  display: flex; 
+}
+
+
+.menu h2{
+
+    font-size: 30px;
+    color: white;
+}
+
+.menu h1{  
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(148, 147, 147);
+    border-radius: 9px;
+    padding: 20px;
+    text-align: left;
+    width: 970px;
+    height: 100%;
+    flex-direction: column;
+    margin: 20px 0;
+     font-size: 30px;
+    color: white;
+
+}
+
+.ppp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Info1producto {
+  background-color: rgb(0, 0, 88);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 9px;
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.Tags ul {
+    font-size: 30px;
+    color: rgb(0, 0, 88);
+
+}
+
+#estre{
+    color: goldenrod;
+}
+
+.Reseñas {
+background-color: rgb(0, 0, 88);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 9px;
+  padding: 20px;
+  text-align: center;
+  width: 925px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+
 }
