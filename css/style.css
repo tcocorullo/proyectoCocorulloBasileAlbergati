@@ -49,10 +49,12 @@ a{
 }
 
 .footer{
+    width: 100%;
     background-color: orangered;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .lema{
@@ -77,6 +79,7 @@ a{
 
 .m_log{
     height: 72vh;
+    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,6 +129,7 @@ a{
 
 .m_reg{
     height: 72vh;
+    width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
