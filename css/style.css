@@ -293,7 +293,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(148, 147, 147);
+    border: 1px solid rgb(0, 0, 88);
     border-radius: 9px;
     padding: 20px;
     text-align: left;
@@ -302,7 +302,6 @@ a{
     margin: 20px 0;
     font-size: 30px;
     color: white;
-
 }
 
 .ppp{
@@ -351,6 +350,10 @@ a{
   justify-content: space-between;
   margin-bottom: 30px;
   align-items: center;
+}
+
+.Info2{
+  color: black;
 }
 
 @media(max-width: 430px){
