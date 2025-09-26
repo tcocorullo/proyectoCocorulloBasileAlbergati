@@ -8,7 +8,7 @@ body {
 }
 
 ul, ol{
-   padding: 0;
+  padding: 0;
 }
 
 li{
@@ -104,7 +104,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 72%;
+    height: 52vh;
     background-color: red;
     border-radius: 15px;
 }
@@ -159,7 +159,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 92%;
+    height: 67vh;
     background-color: red;
     border-radius: 15px;
 }
@@ -251,14 +251,12 @@ a{
 .caja_sidebar{
   width: 30%;         
   padding: 10px;
-  height: 100%;
   font-size: large;
 }
 
 .caja_sidebarr{
   width: 15%;         
   padding: 10px;
-  height: 100%;
   font-size: large;
 }
 
@@ -279,7 +277,6 @@ a{
 }
 
 .menu h2{
-
     font-size: 30px;
     color: white;
 }
@@ -297,7 +294,6 @@ a{
     border-radius: 9px;
     padding: 20px;
     text-align: left;
-    height: 100%;
     flex-direction: column;
     margin: 20px 0;
     font-size: 30px;
@@ -423,8 +419,8 @@ a{
   .Reseñas{
     width: 80%;
     margin: 0, 20px;
-    height: 100%;
     padding: 15px;
+    height: 35vh;
   }
 
   .data{
@@ -435,6 +431,10 @@ a{
     background-color: white;
     color: black;
     border: none;
+  }
+
+  .menu img{
+    width: 100%;
   }
 
   .container{
