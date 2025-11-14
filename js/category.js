@@ -13,15 +13,22 @@ formulario.addEventListener('submit', function(evento) {
     }
 })
 
-const url = "https://dummyjson.com/products"
+const url = "https://dummyjson.com/products/categories"
 
 fetch(url)
     .then(function(res) {
         return res.json();
     })
-    .then(function(data){
+    .then(function(data) {
         console.log(data);
+
+        let sidebar = document.querySelector(".lista_categorias")
+        for (let i = 0; i < data.length; i++) {
+            sidebar.innerHTML += `<li><a href="./category.html">${data[i].name}</a></li>`;
+        }
+
     })
-    .catch(function(error){
-        console.log("El error es: " + error);
-    })
+.catch(function(error){
+    console.log("El error es: " + error);
+})
+
