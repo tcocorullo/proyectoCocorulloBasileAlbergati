@@ -12,3 +12,16 @@ formulario.addEventListener('submit', function(evento) {
         this.submit()
     }
 })
+
+const url = "https://dummyjson.com/products"
+
+fetch(url)
+    .then(function(res) {
+        return res.json();
+    })
+    .then(function(data){
+        console.log(data);
+    })
+    .catch(function(error){
+        console.log("El error es: " + error);
+    })
