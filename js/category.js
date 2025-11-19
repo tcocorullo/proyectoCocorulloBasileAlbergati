@@ -13,8 +13,9 @@ formulario.addEventListener('submit', function(evento) {
     }
 })
 
-const params = new URLSearchParams(window.location.search);
-const categoria = params.get("category");
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let categoria = queryStringObj.get("category");
 
 fetch("https://dummyjson.com/products/category/" + categoria)
   .then(function (res) {
@@ -34,7 +35,7 @@ fetch("https://dummyjson.com/products/category/" + categoria)
             <a href="product.html?product=${data.products[i].id}"" class="botones">Ver detalle</a>
         </article>    
       `
-      // TODO: REVISAR QUE EL QUERYSTRING (?product) SEA EL MISMO NOMBRE USADO EN LA PAGINA DE PRODUCT.HTML
+      // REVISAR QUE EL QUERYSTRING (?product) SEA EL MISMO NOMBRE USADO EN LA PAGINA DE PRODUCT.HTML
       listaProductos.innerHTML += article;
     }
   })
