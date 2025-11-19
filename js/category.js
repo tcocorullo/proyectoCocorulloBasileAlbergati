@@ -35,7 +35,7 @@ fetch("https://dummyjson.com/products/category/" + categoria)
             <a href="product.html?product=${data.products[i].id}"" class="botones">Ver detalle</a>
         </article>    
       `
-      // REVISAR QUE EL QUERYSTRING (?product) SEA EL MISMO NOMBRE USADO EN LA PAGINA DE PRODUCT.HTML
+      // TODO: REVISAR QUE EL QUERYSTRING (?product) SEA EL MISMO NOMBRE USADO EN LA PAGINA DE PRODUCT.HTML
       listaProductos.innerHTML += article;
     }
   })
