@@ -13,7 +13,7 @@
         </a>
         <form class="buscador" action="./search-results.html" method="get">
             <div>
-                <input class="inputb" type="text" name="Buscar productos" value="" placeholder="Buscar productos">
+                <input type="text" name="Buscar productos" value="" placeholder="Buscar productos">
             </div>
             <div>
                 <button type="submit">Buscar</button>
@@ -21,22 +21,22 @@
         </form>
         <nav>
         <ul class="barra">
-            <li><a href="./index.html" class="botones">Home</a></li>
-            <li><a href="./login.html" class="botones">Login</a></li>
-            <li><a href="./register.html" class="botones">Registro</a></li>
+
         </ul>
         </nav>
     </header>
     <main class="m_log">
-        <form class="login" action="./index.html" method="get">
+        <form class="login">
             <h1 class="titulo_log">Login</h1>
             <div class="login_b">
                 <label for="email">Email: </label>
                 <input class="email_input" id="email" type="email" name="email" value="">
+                <label class="error_email"></label>
             </div>
             <div class="login_b">
                 <label for="contra">Contraseña: </label>
                 <input class="contra_input" id="contra" type="password" name="password" value="">
+                <label class="error_password"></label>
             </div>
             <div class="ingresar">
                 <button class="boton_log" type="submit">Ingresar</button>
