@@ -66,3 +66,6 @@ fetch(url2)
     }
 
     })
+.catch(function(error){
+    console.log("El error es: " + error);               //falta poner la fecha en el formato correcto y la marca
+})
