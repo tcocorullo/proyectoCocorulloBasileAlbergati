@@ -202,6 +202,14 @@ a{
     justify-content: space-around;
  
 }
+
+.productos1 {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
 .producto {
   background-color: rgb(0, 0, 88);
   border: 1px solid rgb(0, 0, 0);
@@ -209,7 +217,7 @@ a{
   padding: 20px;
   text-align: left;
   width: 250px;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -277,11 +285,31 @@ a{
 }
 
 .menu h2{
-    font-size: 30px;
+    font-size: 50px;
+    color: white;
+}
+
+.menu1 h2{
+    font-size: 50px;
+    color: white;
+}
+
+.menu2 h2{
+    font-size: 50px;
     color: white;
 }
 
 .menu h1{  
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.menu1 h1{  
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.menu2 h1{  
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
@@ -298,13 +326,46 @@ a{
     margin: 20px 0;
     font-size: 30px;
     color: white;
+    width: 60vw;
+}
+
+.menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 88);
+    border-radius: 9px;
+    padding: 20px;
+    text-align: left;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 30px;
+    color: white;
+}
+
+.menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    padding: 20px;
+    text-align: left;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 30px;
+    color: rgb(0, 0, 88);
 }
 
 .ppp{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+#reseñ{
+  color: rgb(0, 0, 88);
 }
 
 .Info1producto {
@@ -314,7 +375,7 @@ a{
   padding: 20px;
   text-align: center;
   width: 500px;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -328,8 +389,8 @@ a{
 
 }
 
-#estre{
-    color: goldenrod;
+.rating{
+    color: yellow;
 }
 
 
@@ -339,8 +400,8 @@ a{
   border-radius: 9px;
   padding: 20px;
   text-align: center;
-  width: 925px;
-  height: 200px;
+  width: 40vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -420,7 +481,7 @@ a{
     width: 80%;
     margin: 0, 20px;
     padding: 15px;
-    height: 35vh;
+    height: auto;
   }
 
   .data{
@@ -433,7 +494,27 @@ a{
     border: none;
   }
 
+  .menu1{
+    background-color: white;
+    color: black;
+    border: none;
+  }
+
+  .menu2{
+    background-color: white;
+    color: black;
+    border: none;
+  }
+
   .menu img{
+    width: 100%;
+  }
+
+  .menu1 img{
+    width: 100%;
+  }
+
+  .menu2 img{
     width: 100%;
   }
 
