@@ -37,7 +37,7 @@ form.addEventListener("submit", function(event) {
     }
 
     if (password.length < 6) {
-        errorPassword.innerHTML = "La longitud de la password debe ser al menos 6."
+        errorPassword.innerHTML = "La longitud de la contraseña debe ser al menos 6."
         return;
     }
 

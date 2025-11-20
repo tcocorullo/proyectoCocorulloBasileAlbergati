@@ -423,6 +423,15 @@ a{
   color: white;
 }
 
+.error_email,
+.error_password {
+  color: orange;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 3px;
+  display: block;
+}
+
 @media(max-width: 430px){
   .layout {
     display: flex;
