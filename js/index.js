@@ -24,7 +24,7 @@ fetch(url1)
 
         let sidebar = document.querySelector(".lista_categorias")
         for (let i = 0; i < data.length; i++) {
-            sidebar.innerHTML += `<li><a href="./category.html?category=${data[i].name}">${data[i].name}</a></li>`;
+            sidebar.innerHTML += `<li><a href="./category.html?category="${data[i].name}">${data[i].name}</a></li>`;
         }
 
     })
