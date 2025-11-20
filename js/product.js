@@ -13,7 +13,7 @@ formulario.addEventListener('submit', function(evento) {
     }
 })
 
-const url2 = "https://dummyjson.com/products"
+const url2 = "https://dummyjson.com/products?limit=0"
 
 fetch(url2)
     .then(function(res) {
