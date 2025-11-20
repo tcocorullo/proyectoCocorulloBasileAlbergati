@@ -54,7 +54,7 @@ fetch(url2)
     }
 
     let productos1 = document.querySelector(".productos1")
-    for (let i = 15; i < data.products.length; i++) {
+    for (let i = 15; i < 30; i++) {
         productos1.innerHTML +=
             `<article class="producto">
                 <img src="${data.products[i].thumbnail}" alt=""/>
