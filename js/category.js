@@ -60,11 +60,6 @@ fetch("https://dummyjson.com/products/category/" + categoria)
       `
     }
     listaProductos.innerHTML += article;
-    
-    if (article == "") {
-      let vacio = document.querySelector(".busqu");
-      vacio.style.display = "block";
-    }
   })
 .catch(function(error){
     console.log("El error es: " + error);               //falta poner la fecha en el formato correcto y la marca
