@@ -413,6 +413,19 @@ a{
   color: black;
 }
 
+.busqu {
+  display: none;
+}
+
+#titulo {
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.barra {
+  color: white;
+}
+
 @media(max-width: 430px){
   .layout {
     display: flex;

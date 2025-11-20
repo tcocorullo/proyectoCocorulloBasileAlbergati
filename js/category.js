@@ -13,6 +13,25 @@ formulario.addEventListener('submit', function(evento) {
     }
 })
 
+const url1 = "https://dummyjson.com/products/categories"
+
+fetch(url1)
+    .then(function(res) {
+        return res.json();
+    })
+    .then(function(data) {
+        console.log(data);
+
+        let sidebar = document.querySelector(".lista_categorias")
+        for (let i = 0; i < data.length; i++) {
+            sidebar.innerHTML += `<li><a href="./category.html?category=${data[i].name}">${data[i].name}</a></li>`;
+        }
+
+    })
+.catch(function(error){
+    console.log("El error es: " + error);
+})
+
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let categoria = queryStringObj.get("category");
@@ -22,22 +41,32 @@ fetch("https://dummyjson.com/products/category/" + categoria)
     return res.json();
   })
   .then(function (data) {
-    const listaProductos = document.querySelector(".lista_productos");
-    listaProductos.innerHTML = "";
 
+    let titulo = document.querySelector("#titulo")
+    titulo.innerText = categoria
+
+    const listaProductos = document.querySelector(".productos");
+    listaProductos.innerHTML = "";
+    let article = ""
     for (let i = 0; i < data.products.length; i++) {
-      const article = `
+      article += `
         <article class="producto">
             <img src="${data.products[i].images[0]}" alt="${data.products[i].title}">
             <h3>${data.products[i].title}</h3>
             <p>${data.products[i].description}</p>
             <p>Precio: USD ${data.products[i].price}</p>
-            <a href="product.html?product=${data.products[i].id}"" class="botones">Ver detalle</a>
+            <a href="./product.html?id=${data.products[i].id}" class="botones">Ver detalle</a>
         </article>    
       `
-      // TODO: REVISAR QUE EL QUERYSTRING (?product) SEA EL MISMO NOMBRE USADO EN LA PAGINA DE PRODUCT.HTML
-      listaProductos.innerHTML += article;
+    }
+    listaProductos.innerHTML += article;
+    
+    if (article == "") {
+      let vacio = document.querySelector(".busqu");
+      vacio.style.display = "block";
     }
   })
-
+.catch(function(error){
+    console.log("El error es: " + error);               //falta poner la fecha en el formato correcto y la marca
+})
 
