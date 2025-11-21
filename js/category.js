@@ -24,7 +24,7 @@ fetch(url1)
 
         let sidebar = document.querySelector(".lista_categorias")
         for (let i = 0; i < data.length; i++) {
-            sidebar.innerHTML += `<li><a href="./category.html?category=${data[i].name}">${data[i].name}</a></li>`;
+            sidebar.innerHTML += `<li><a href="./category.html?category=${data[i].slug}&nombre=${data[i].name}">${data[i].name}</a></li>`;
         }
 
     })
@@ -35,6 +35,7 @@ fetch(url1)
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let categoria = queryStringObj.get("category");
+let nombre = queryStringObj.get("nombre");
 
 fetch("https://dummyjson.com/products/category/" + categoria)
   .then(function (res) {
@@ -43,7 +44,7 @@ fetch("https://dummyjson.com/products/category/" + categoria)
   .then(function (data) {
 
     let titulo = document.querySelector("#titulo")
-    titulo.innerText = categoria
+    titulo.innerText = nombre
 
     const listaProductos = document.querySelector(".productos");
     listaProductos.innerHTML = "";

@@ -61,5 +61,5 @@ fetch(url2)
                 </section>`
     })
 .catch(function(error){
-    console.log("El error es: " + error);               //falta poner la fecha en el formato correcto y la marca
+    console.log("El error es: " + error);
 })
