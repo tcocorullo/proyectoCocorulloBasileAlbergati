@@ -63,6 +63,6 @@ fetch("https://dummyjson.com/products/category/" + categoria)
     listaProductos.innerHTML += article;
   })
 .catch(function(error){
-    console.log("El error es: " + error);               //falta poner la fecha en el formato correcto y la marca
+    console.log("El error es: " + error);
 })
 
