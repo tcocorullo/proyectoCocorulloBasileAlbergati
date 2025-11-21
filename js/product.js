@@ -25,7 +25,8 @@ fetch(url2)
         let queryString = location.search;
         let queryStringObj = new URLSearchParams(queryString);
         
-        let idProducto = queryStringObj.get("id")
+        let idProductoMasUno = queryStringObj.get("id")
+        let idProducto = idProductoMasUno - 1
         
         let producto = document.querySelector(".menu")
         producto.innerHTML =
