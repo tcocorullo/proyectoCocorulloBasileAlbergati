@@ -40,10 +40,9 @@ form.addEventListener("submit", function(event) {
         errorPassword.innerHTML = "La longitud de la contraseña debe ser al menos 6."
         return;
     }
-
-    // Email y password validos
-    localStorage.setItem("emailUsuario", email);
-    window.location.href = "index.html";
+    
+localStorage.setItem("emailUsuario", email);
+    this.submit()
 
 })
 
