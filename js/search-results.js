@@ -29,7 +29,7 @@ fetch(url2)
         console.log(data);
         let ProductosSR = data.products
         if(ProductosSR.length == 0) {
-            alert("No se han encontrado resultados relacionados al término" + termino)
+            alert("No se han encontrado resultados relacionados al término; " + termino)
         }
         let productos = document.querySelector(".productos")
         for (i = 0 ; i < data.products.length ; i++) {
